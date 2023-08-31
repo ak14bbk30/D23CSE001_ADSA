@@ -98,7 +98,7 @@ int main() {
         insert(&ht,integerArray[i]);
 
     }
-    for(int i=0 ;i<5000000;i++){} 
+    for(int i=0 ;i<5000000;i++){} //Inserting a temporary for loop for better results of Time
     clock_t end = clock();
     double cpu_time_used = ((double)(end - start)); 
     printf("Time taken for inserting 10000 keys: %lf seconds\n", cpu_time_used);
@@ -118,7 +118,7 @@ int main() {
         insert(&ht, insert_elemet[i]);
         printf("Value %d inserted\n", insert_elemet[i]);
     }
-    for(int i=0 ;i<5000000;i++){} 
+    for(int i=0 ;i<5000000;i++){} //Inserting a temporary for loop for better results of Time
     clock_t end2 = clock();
     double cpu_time_used2 = ((double)(end2 - start2)) / CLOCKS_PER_SEC;
     printf("Time taken for inserting given Five keys: %lf seconds\n", cpu_time_used2);
@@ -137,7 +137,7 @@ int main() {
             printf("Value %d not found in the hash table\n", searchValue[i]);
     }
     }
-    for(int i=0 ;i<5000000;i++){} 
+    for(int i=0 ;i<5000000;i++){} //Inserting a temporary for loop for better results of Time
     clock_t end3 = clock();
     double cpu_time_used3 = ((double)(end3 - start3)) / CLOCKS_PER_SEC;
     printf("Time taken for searching given five keys: %f seconds\n", cpu_time_used3);
@@ -148,7 +148,7 @@ int main() {
     for(int i=0; i<5;i++){
         delete(&ht, deletevalue[i]);
 
-    for(int i=0 ;i<5000000;i++){}    
+    for(int i=0 ;i<5000000;i++){}  //Inserting a temporary for loop for better results of Time
     }
     clock_t end4 =  clock();
     double cpu_time_used4 = ((double)(end4 - start4)) / CLOCKS_PER_SEC;
